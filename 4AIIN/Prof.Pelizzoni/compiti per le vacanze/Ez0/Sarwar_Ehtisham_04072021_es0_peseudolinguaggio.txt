@@ -1,0 +1,59 @@
+INIZIO
+	contK <- 0
+	i <- 10
+
+	RIPETI
+		scrivi "Fino a quale numero vuole analizzare: "  
+		leggi N
+		scrivi "Quale numero vuole cercare: " 
+		leggi K
+	FINO_A_CHE(N<=10 OR K<0)
+
+	FINTANTOCHE' (i<=N) ESEGUI
+		INIZIO
+			sum <- 0
+			num <- i
+			resto <- resto%10
+			
+			SE(resto%2<>0)
+				ALLORA
+					INIZIO
+						sum <- sum+resto
+						num <- num/10
+
+						FINTANTOCHE' (num>0) ESEGUI
+							INIZIO
+								resto <- num%10
+
+								SE(num/10 == 0)
+									ALLORA
+										INIZIO
+											SE(resto%2<>0)
+												ALLLORA
+													INIZIO
+														sum <- sum+resto
+													FINE
+												ALTRINENTI
+													INIZIO
+														sum <- sum+resto
+													FINE
+											FINE_SE
+										FINE
+									ALTRIMENTI
+										INIZIO
+											sum <- sum+resto
+										FINE
+									
+									num <- num/10
+							FINE 
+					FINE
+			FINE_SE
+			SE(sum == K)
+				INIZIO
+					contK <- contK + 1
+				FINE
+			
+		FINE
+	
+	Scrivi contK
+FINE

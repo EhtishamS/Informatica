@@ -1,0 +1,53 @@
+main
+INIZIO
+	Scrivi "Inserire un carattere: " 
+	leggi c
+
+	RIPETI
+		Scrivi "Inserire un numero dispari: " 
+		leggi n
+	FINO_A_CHE(n%2==0)
+
+	printClessidra(c,n)
+	
+FINE
+
+
+printClessidra(c,n)
+INIZIO
+
+	i <- 0
+	j <- 0
+	copyN <- n
+
+	FINTANTOCHE(i<n) ESEGUI
+		INIZIO
+
+			FINANTOCHE(j<copyN+(n-copyN) div 2) ESEGUI
+				INIZIO
+					SE(j<(n-copyN) div 2)
+						ALLORA
+							INIZIO
+								Scrivi " "
+							FINE
+						ALTRIMENTI
+							INIZIO
+								scrivi c
+							FINE
+					FINE_SE
+					j <- j+1
+				FINE
+
+			SE(i>= n div 2)
+				ALLORA
+					INIZIO
+						copyN <- copyN+2
+					FINE
+				ALTRIMENTI
+					INIZIO
+						copyN <- copyN-2
+					FINE
+			FINE_SE
+			i <- i+1
+		FINE
+FINE

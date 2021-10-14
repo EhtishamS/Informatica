@@ -1,0 +1,76 @@
+main
+INIZIO
+	v[MAX]
+	w[MAX]
+
+	inizializza(w)
+
+	RIPETI
+		scrivi "Inserire la lunghezza del vettore: "
+		leggi n
+		scrivi "Inserire un intervallo: "
+		leggi h,k
+	FINO_A_CHE(n<=0 OR n>MAX OR h<1 OR k<=h)
+
+	inserimentoV(v,n,h,k)
+	costruziozioneW(v,w,n)
+
+	scrivi "Stampa del vettore v: "
+	stampa(v,n)
+
+	scrivi "Stampa del vettore w: "
+	stampa(w,n)
+FINE
+
+inizializzaW(int w[])
+INIZIO
+	i <- 0
+	
+	FINTANTOCHE(i<MAX) ESEGUI
+	INIZIO
+		w[i] <- 0
+	FINE
+
+FINE
+
+inserimento(int v[], int n, int h, int k)
+INIZIO
+	i <- 0
+
+	FINTANTOCHE(i<N) ESEGUI
+	INIZIO
+		v[i] <- rand() MOD (k-h+1)+h;
+	FINE
+
+FINE
+
+costruzioneW(int v[], int w[], int n)
+INIZIO
+	i <- 0
+	j <- 0
+
+	FINTANTOCHE(i<n) ESEGUI
+	INIZIO
+		FINTANTOCHE(j<N) ESEGUI
+		INIZIO
+			SE(v[j]>=v[i] AND v[j] MOD v[i] = 0)
+				ALLORA
+					INIZIO
+						W[i] <- w[i]+1
+					FINE
+			FINE_SE
+		FINE
+	FINE
+
+FINE
+
+stampa(int v[], int n)
+INIZIO
+	i <- 0
+
+	FINTATOCHE(i<n) ESEGUI
+	INIZIO
+		scrivi v[i] + " "
+	FINE
+	
+FINE

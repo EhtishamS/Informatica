@@ -1,0 +1,87 @@
+body{
+    background-color: rgb(0, 139, 139);
+    margin: 0px;
+}
+
+.title{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#nav{
+	float:left;
+    width: 23%;
+    background-color: rgb(75, 148, 148);
+    margin-left: 50px;
+    padding: 10px;
+    text-align: left;
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#nav li{
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#nav li a{
+    text-decoration:none;
+    color: white;
+    padding: 3px;
+}
+
+#nav li a:hover{
+    background-color: rgb(16, 189, 189);
+}
+
+.return{
+    text-align: center;
+}
+
+.return a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+
+#html{
+    text-align: center;
+}
+
+#html h3{
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#html img{
+    margin-top: 10px;
+}
+
+.container{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(75, 148, 148);
+    padding: 50px;
+}
+
+#Spazio_blank{
+	margin-left: 33%;
+}
+
+.text{
+    color: white;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title2{
+    color:white; 
+    font-size:30px;
+}
