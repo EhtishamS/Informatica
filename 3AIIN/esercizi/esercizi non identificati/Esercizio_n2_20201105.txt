@@ -1,0 +1,20 @@
+INIZIO
+	RIPETI
+		leggi n
+	FINO_A_CHE(n<0)
+	
+	RIPETI 
+		leggi k
+	FINO_A_CHE(K<=0)
+	
+	temp <- n+k
+	n++
+
+	FINTANTOCHE(n<=temp) ESEGUI
+	INIZIO
+		somma <- n*n
+		n++ 
+	FINE
+	scrivi "Output: " somma
+
+FINE
